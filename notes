@@ -1,0 +1,85 @@
+jQuery is a lightweight, "write less, do more", JavaScript library.
+
+The jQuery library contains the following features:
+HTML/DOM manipulation
+CSS manipulation
+HTML event methods
+Effects and animations
+AJAX
+Utilities
+
+Basic syntax is: $(selector).action()
+A $ sign to define/access jQuery
+A (selector) to "query (or find)" HTML elements
+A jQuery action() to be performed on the element(s)
+
+jQuery Selectors
+The element Selector
+The #id Selector
+The .class Selector
+$("*")	Selects all elements	
+$(this)	Selects the current HTML element	
+$("p.intro")	Selects all <p> elements with class="intro"	
+$("p:first")	Selects the first <p> element	
+$("ul li:first")	Selects the first <li> element of the first <ul>	
+$("ul li:first-child")	Selects the first <li> element of every <ul>	
+$("[href]")	Selects all elements with an href attribute	
+$("a[target='_blank']")	Selects all <a> elements with a target attribute value equal to "_blank"	
+$("a[target!='_blank']")	Selects all <a> elements with a target attribute value NOT equal to "_blank"	
+$(":button")	Selects all <button> elements and <input> elements of type="button"	
+$("tr:even")	Selects all even <tr> elements	
+$("tr:odd")	Selects all odd <tr> elements
+
+jQuery Event Methods
+jQuery is tailor-made to respond to events in an HTML page.
+$(document).ready()
+click()
+dblclick()
+mouseenter()
+mouseleave()
+mousedown()
+mouseup()
+keypress()
+keyup()
+keydown()
+hover() combination of the mouseenter() and mouseleave()
+focus() - form field gets focus
+blur() - form field loses focus
+form controls
+-Focusing: focus/blur
+-Events: change, input, cut, copy, paste
+The on() Method - attaches one or more event handlers
+
+
+.ready(),.append(),.hide(),.css(),.parents()
+
+jQuery Effects 
+Hide, Show, Toggle, Slide, Fade, and Animate
+Hide and Show , Toggle
+$(selector).hide(speed,callback);
+$(selector).show(speed,callback);
+$(selector).toggle(speed,callback); - toggle between hiding and showing an element
+Fade(backgroundcolor)
+$(selector).fadeIn(speed,callback);
+$(selector).fadeOut(speed,callback);
+$(selector).fadeToggle(speed,callback);
+$(selector).fadeTo(speed,opacity,callback);
+Slide
+$(selector).slideDown(speed,callback);
+$(selector).slideUp(speed,callback);
+$(selector).slideToggle(speed,callback);
+Animate 
+- By default, all HTML elements have a static position, and cannot be moved.To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!
+-all property names must be camel-cased when used with the animate() method:write paddingLeft instead of padding-left
+-color animation is not included
+-jQuery animate() Using Relative Values(the value is then relative to the element's current value) :  by putting += or -= in front of the value
+-jQuery animate() Using Pre-defined Values : property's animation value  "show", "hide", or "toggle"
+-jQuery animate() Uses Queue Functionality
+-$(selector).animate({params},speed,callback);
+The required params parameter defines the CSS properties to be animated.
+optional speed parameter values: "slow", "fast", or milliseconds
+optional callback parameter
+jQuery stop() method 
+- stop animations or effects before it is completed
+- works for all jQuery effect functions, including sliding, fading and custom animations
+- $(selector).stop(stopAll,goToEnd);
