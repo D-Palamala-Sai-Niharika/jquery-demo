@@ -50,25 +50,22 @@ form controls
 -Events: change, input, cut, copy, paste
 The on() Method - attaches one or more event handlers
 
-
-.ready(),.append(),.hide(),.css(),.parents()
-
 jQuery Effects 
 Hide, Show, Toggle, Slide, Fade, and Animate
-Hide and Show , Toggle
+Hide and Show , Toggle:
 $(selector).hide(speed,callback);
 $(selector).show(speed,callback);
 $(selector).toggle(speed,callback); - toggle between hiding and showing an element
-Fade(backgroundcolor)
+Fade(backgroundcolor):
 $(selector).fadeIn(speed,callback);
 $(selector).fadeOut(speed,callback);
 $(selector).fadeToggle(speed,callback);
 $(selector).fadeTo(speed,opacity,callback);
-Slide
+Slide:
 $(selector).slideDown(speed,callback);
 $(selector).slideUp(speed,callback);
 $(selector).slideToggle(speed,callback);
-Animate 
+Animate :
 - By default, all HTML elements have a static position, and cannot be moved.To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!
 -all property names must be camel-cased when used with the animate() method:write paddingLeft instead of padding-left
 -color animation is not included
@@ -79,7 +76,25 @@ Animate
 The required params parameter defines the CSS properties to be animated.
 optional speed parameter values: "slow", "fast", or milliseconds
 optional callback parameter
-jQuery stop() method 
+jQuery stop() method :
 - stop animations or effects before it is completed
 - works for all jQuery effect functions, including sliding, fading and custom animations
 - $(selector).stop(stopAll,goToEnd);
+
+jQuery Method Chaining
+$("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+
+.ready(),.append(),.hide(),.css(),.parents()
+
+Jquery HTML
+Jquery Get
+Get Content - text(), html(), val(),attr()
+Jquery Set
+Set Content - text(), html(), val(),attr()
+Three simple, but useful, jQuery methods for DOM manipulation are:
+text() - Sets or returns the text content of selected elements
+html() - Sets or returns the content of selected elements (including HTML markup)
+val() - Sets or returns the value of form fields
+attr() - method is used to get attribute values.
+The callback function has two parameters: the index of the current element in the list of elements selected and the original (old) value. You then return the string you wish to use as the new value from the function.
+
