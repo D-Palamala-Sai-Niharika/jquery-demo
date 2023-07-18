@@ -70,11 +70,44 @@
         <button class="btn10">Show Old/New HTML</button>
         <button class="btn11">Set Attr Callback</button>
         
-         <!-- jqery add-->
+         <!-- jquery add - append(),prepend(),after(),before()-->
          <h2>jquery Add</h2>
+         <ol>
+            <li class="appendText">This is an item</li>
+            <li class="prependText">This is an item</li>
+            <li>This is an item</li>
+         </ol>
+         <button class="appendTextBtn">Append text</button>
+         <button class="prependTextBtn">Prepend text</button>
+         <button class="appendItemBtn">Append list</button>
+         <button class="prependItemBtn">Prepend list</button><br>
+         <div class="appendDiv"><br>
+            <button onclick="appendText()">Append Several Elements</button>
+         </div>
+
+         <!-- jquery remove - remove(),empty()-->
+         <h2>jquery remove</h2>
+         <div class="remove" style="border:1px solid black;background-color:#98bf21;width:300px;height:300px">
+            <p class="remove1">This is a paragraph with class remove1</p>
+            <p class="remove1">This is a paragraph with class remove1</p>
+            <p class="remove2">This is a paragraph with class remove2</p>
+            <p class="remove3">This is a paragraph with class remove3</p>
+         </div><br>
+         <button class="rm">remove</button>
+         <button class="em">empty</button>
+         <button class="rmSpecify">remove 1 and 2</button>
         
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>         
         <script src="./app.js"></script>
+        <script>
+            function appendText() {
+              var txt1 = "<p>Text 1</p>";        // Create text with HTML
+              var txt2 = $("<p></p>").text("Text 2");  // Create text with jQuery
+              var txt3 = document.createElement("p");
+              txt3.innerHTML = "Text 3";         // Create text with DOM
+              $(".appendDiv").append(txt1, txt2, txt3);   // Append new elements
+            }
+        </script>
         
     </body>
 </html>

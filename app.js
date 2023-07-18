@@ -107,4 +107,32 @@ $("document").ready(function(){
         });
     });
 
+    //add
+    $(".appendTextBtn").click(function(){
+        $(".appendText").append("<b>:ITEM</b>");
+    });
+    $(".prependTextBtn").click(function(){
+        $(".prependText").prepend("<b>ITEM:</b>");
+    });
+    $(".appendItemBtn").click(function(){
+        $("ol").append("<li>Appended Item</li>");
+    });
+    $(".prependItemBtn").click(function(){
+        $("ol").prepend("<li>Prepended Item</li>");
+    });
+
+    //remove
+    $(".rm").click(function(){
+        $(".remove").remove();
+    });
+    $(".em").click(function(){
+        $(".remove").empty();
+    });
+    // $(".rmSpecify").click(function(){
+    //     $("p").remove(".remove1");
+    // });
+    $(".rmSpecify").click(function(){
+        $("p").remove(".remove1,.remove2");
+    });
+
 });
