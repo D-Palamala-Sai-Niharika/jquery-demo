@@ -14,3 +14,10 @@
     display: none;
     padding:50px;
 }
+.color{
+    color:#98bf21;
+}
+.fontSize{
+    font-size: 24px;
+    font-weight: 200;
+}

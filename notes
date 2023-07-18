@@ -106,4 +106,12 @@ jquery remove - remove(),empty()
 remove() - Removes the selected element and its child elements
 empty() - Removes the child elements from the selected element
 
+jQuery - Get and Set CSS Classes
+jQuery has several methods for CSS manipulation:
+addClass() - Adds one or more classes to the selected elements
+removeClass() - Removes one or more classes from the selected elements
+toggleClass() - Toggles between adding/removing classes from the selected elements
+css() - method sets or returns one or more style properties
+To return the value of a specified CSS property : css("propertyname");
+To set a specified CSS property, use the following syntax:css("propertyname","value");
 

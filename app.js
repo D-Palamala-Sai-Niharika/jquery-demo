@@ -135,4 +135,26 @@ $("document").ready(function(){
         $("p").remove(".remove1,.remove2");
     });
 
+    //jquery css classes
+    $(".addClassBtn").click(function(){
+        $(".para1,.para2").addClass("color");
+    });
+    $(".rmClassBtn").click(function(){
+        $(".para3").removeClass("color");
+    });
+    $(".toggleClassBtn").click(function(){
+        $(".para4").toggleClass("color");
+    });
+    $(".mulClassBtn").click(function(){
+        $(".para").addClass("color fontSize");
+    });
+
+    //jquert css()
+    $(".getCSS").click(function(){
+        alert($(".cssPara").css("background-color"));
+    });
+    $(".setCSS").click(function(){
+        $(".cssPara").css("background-color","#e5eecc");
+    });
+
 });
